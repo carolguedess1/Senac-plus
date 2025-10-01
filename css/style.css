@@ -18,3 +18,102 @@ body{
     font-size: 1rem;
     font-weight: 400;
 }
+
+.principal{
+    background-image: url('../img/img-background.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+/* separa a sessão em colunas */
+.container{
+    height: 100vh;
+    display: grid; /* ativar o layout de grade */
+    grid-template-columns: 50% 50%; /* para definir as dimensões das colunas e separa o container em 2 colunas */
+}
+
+.container__caixa{
+    margin: 0 10rem;
+}
+
+.container__titulo{
+    font-size: 1.75rem;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container__botao{
+    background-color: var(--botao-azul);
+    border-radius: 0.5rem; 
+    padding: 1rem; /* espaço de dentro do botão */
+    color: var(--branco-principal); 
+    display: block; /* faz com que os botões fiquem um embaixo do outro */
+    text-decoration: none;
+    margin-bottom: 1rem; /* espaço entre os botões */
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.container__botao--secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.container__descricao{
+    padding: 2rem;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--branco-principal);
+    margin-bottom: 0.1rem;
+}
+
+.descricao__texto{
+    color: var(--cinza-secundario);
+    margin-bottom: 1rem;
+}
+
+.terciario{
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.container__botao__terciario{
+    background-color: var(--botao-azul);
+    border-radius: 0.5rem; 
+    padding: 1rem; /* espaço de dentro do botão */
+    color: var(--branco-principal); 
+    display: block; /* faz com que os botões fiquem um embaixo do outro */
+    text-decoration: none;
+    margin-bottom: 1rem; /* espaço entre os botões */
+    margin-right: 75%;
+    text-align: center;
+}
+
+.terciario__imagem{
+    width: 70%;
+}
+
+.quartenario{
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.quartenario__imagem{
+    width: 80%;
+}
